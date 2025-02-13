@@ -1,0 +1,96 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Larasoft - Solutions Logicielles Innovantes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#">Larasoft</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Solutions</a></li>
+        <li><a href="#">À Propos</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Solutions Logicielles sur Mesure</h1>
+      <p>Nous transformons vos idées en réalité grâce à des solutions logicielles innovantes et performantes.</p>
+      <a href="#" class="cta-button">Découvrez Nos Services</a>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Nos Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h3>Développement Web</h3>
+        <p>Création de sites web et d'applications web modernes et responsives.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Développement Mobile</h3>
+        <p>Conception et développement d'applications mobiles iOS et Android.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-database"></i>
+        <h3>Gestion de Bases de Données</h3>
+        <p>Solutions de gestion et d'optimisation de bases de données.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-cloud"></i>
+        <h3>Solutions Cloud</h3>
+        <p>Migration et gestion de vos infrastructures sur le cloud.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>À Propos de Nous</h2>
+    <div class="about-content">
+      <p>Larasoft est une entreprise spécialisée dans le développement de solutions logicielles sur mesure. Nous accompagnons nos clients de la conception à la réalisation de leurs projets, en leur offrant des solutions innovantes et adaptées à leurs besoins.</p>
+      <p>Notre équipe est composée d'experts passionnés par les technologies du web et du mobile, et nous mettons tout en œuvre pour garantir la satisfaction de nos clients.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contactez-Nous</h2>
+    <form id="contactForm" action="process_contact.php" method="post">
+      <div class="form-group">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <div id="formMessage" class="form-message"></div>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Larasoft. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
